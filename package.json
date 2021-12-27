@@ -1,0 +1,11 @@
+{
+  "name": "template-recreate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
