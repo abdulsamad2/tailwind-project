@@ -4,13 +4,13 @@ module.exports = {
     colors: {
       'body': '#fff',
       'blue': '#093eb6',
-      'yellow': '#ffda44',
-      'gray-dark': '#f4f5f8',
-      'gray': '#677078',
+      'yellow': '#ffb600',
+      'gray-dark': '#23282d',
+      'gray': '#ebebeb',
 
     },
     fontFamily: {
-      sans: ['Roboto Condensed', 'sans-serif'],
+      sans: ['Montserrat'],
 
     },
     extend: {
