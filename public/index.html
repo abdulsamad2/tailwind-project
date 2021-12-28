@@ -23,7 +23,7 @@
 <body>
 
     <!-- topbar -->
-    <div class="flex flex-col justify-items-center md:flex-row md:justify-around bg-gray py-2 mx-auto">
+    <div class="flex flex-col justify-items-center md:flex-row md:justify-around bg-gray py-2 mx-auto items-center">
 
         <div class="text-sm">
             <i class="fas fa-map-marker-alt"></i>
@@ -41,12 +41,12 @@
 
     <!-- header -->
 
-    <nav class="container flex justify-around mx-auto py-8 font-semibold">
+    <nav class="container flex justify-around mx-auto py-8 font-semibold items-center">
         <div>
             <a href="#"><img src="logo.png" alt=""></a>
         </div>
-        <div class="space-x-4 mr-3">
-            <a href="#">Home</a>
+        <div class="space-x-4 mr-3 md:flex hidden md:align-middle md:items-center">
+            <a class="hover:text-yellow" href="#">Home</a>
             <a href="#">Services</a>
             <a href="#">Portfolio</a>
             <a href="#">Blog</a>
@@ -60,7 +60,7 @@
         <!-- Swiper -->
         <div class="sliderAx h-auto ">
             <div id="slider-1" class="">
-                <div class="bg-cover bg-center bg-blend-overlay  h-auto text-white py-24 sm:py-44 px-10 object-fill"
+                <div class="bg-cover bg-center   h-auto text-white py-24 sm:py-44 px-10 object-fill"
                     style="background-image: url(https://images.unsplash.com/photo-1562564055-71e051d33c19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)">
                     <div class="md:w-1/2 container mx-auto text-body shadow-gray-dark ">
                         <p class="font-bold text-sm uppercase">Services</p>
@@ -75,7 +75,7 @@
             </div>
 
             <div id="slider-2" class="">
-                <div class="bg-cover bg-top bg-blend-overlay h-auto text-white py-24 sm:py-44 px-10 object-fill"
+                <div class="bg-cover bg-top  h-auto text-white py-24 sm:py-44 px-10 object-fill"
                     style="background-image: url(https://images.unsplash.com/photo-1544144433-d50aff500b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)">
                     <div class="md:w-1/2 container mx-auto text-body ">
                         <p class="font-bold text-sm uppercase">Services</p>
@@ -100,18 +100,24 @@
 
 
 
-    <div class=" mx-auto justify-between px-10 flex py-8 bg-yellow w-2/3 -mt-24">
-        <h2 class="font-semibold text-body text-xl">WALMART AND AMAZON DROPSHIPINNG</h2>
-        <a href="#" class="bg-yellow "><button class="px-4 py-1.5 rounded font-semibold bg-gray-dark text-body">Conact
+    <div
+        class=" mx-auto md:flex flex-col md:flex-row justify-between px-10 flex items-center py-8 bg-yellow w-full lg:w-2/3 -mt-24">
+        <h2 class="font-semibold text-body text-center md:text-left text-xl">WALMART AND AMAZON DROPSHIPINNG</h2>
+        <a href="#" class="bg-yellow"><button class="px-5 py-2 rounded font-semibold bg-gray-dark text-body">Conact
                 us</button></a>
     </div>
 
-    <div class="flex w-2/3 space-x-4 container justify-around  mx-auto">
+    <div
+        class="flex justify-items-center  w-full md:w-2/3 space-x-4  md:flex-row flex-col md:justify-around  md:mx-auto md:mt-28">
 
 
-        <div class="w-1/2">
-            <h2>AMAZON DROPSHIPPING</h2>
-            <p>We believe in being honest, transparent, goal oriented and customer centric which are some of the beliefs
+        <div class="md:w-1/2 md:px-0 px-2">
+            <h2 class="md:text-3xl text-xl font-bold text-gray-900 text-center md:text-left pb-6">AMAZON DROPSHIPPING
+            </h2>
+            <p class="text-gray-dark font-normal text-justify md:text-left">We believe in being honest, transparent,
+                goal
+                oriented and
+                customer centric which are some of the beliefs
                 that bring us together as entrepreneurs to bring you the best Amazon Dropshipping Automation.
 
                 Create a passive income lifestyle by investing in a Dropshipping Automation store created, optimized and
@@ -123,10 +129,13 @@
                 not surrender until you enjoy the results that we promise to deliver on each and every store! When there
                 is a challenge, we bond even closer as every challenge enhances for the next time around.</p>
         </div>
-        <div class="w-1/2">
-            <h2>WHAT'S A WALMART DROPSHIPPING BUSINESS?</h2>
-            <div class="w-full md:w-full mx-auto p-8">
-                <p>Open <strong>one</strong></p>
+        <div class="md:w-1/2 md:px-0 px-2">
+            <h2 class="md:text-3xl text-xl text-center md:text-left font-bold text-gray-900 pb-4 md:ml-5 "> WHAT'S A
+                WALMART DROPSHIPPING
+                BUSINESS?
+            </h2>
+            <div class=" md:w-full mx-auto p-4">
+
                 <div class="shadow-md">
                     <div class="tab w-full overflow-hidden border-t">
                         <input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
@@ -164,7 +173,34 @@
         </div>
     </div>
 
+    <div class=" bg-gray-dark mt-20">
+        <div
+            class="w-2/3 py-12 flex md:flex-row flex-col mx-auto justify-around items-center align-middle text-center uppercase text-yellow">
+            <div class="space-y-2">
+                <i class="fas fa-user text-6xl "></i>
+                <p class="text-body font-bold text-3xl">107</p>
+                <p>total client</p>
+            </div>
+            <div class="space-y-2">
+                <i class="fas fa-user text-6xl "></i>
+                <p class="text-body font-bold text-3xl">107</p>
+                <p>total client</p>
+            </div>
 
+            <div class="space-y-2">
+                <i class="fas fa-user text-6xl "></i>
+                <p class="text-body font-bold text-3xl">107</p>
+                <p>total client</p>
+            </div>
+
+            <div class="space-y-2">
+                <i class="fas fa-user text-6xl "></i>
+                <p class="text-body font-bold text-3xl">107</p>
+                <p>total client</p>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 
