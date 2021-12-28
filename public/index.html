@@ -5,42 +5,246 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
+
+
     <link rel="stylesheet" href="output.css">
+
 </head>
 
-<body class="bg-body">
-    <header class="container flex justify-around mt-2">
+<body>
+
+    <!-- topbar -->
+    <div class="flex flex-col justify-items-center md:flex-row md:justify-around bg-gray py-2 mx-auto">
+
+        <div class="text-sm">
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="ml-2"> Dhaka, Bangladesh</span>
+        </div>
+        <div class="space-x-4">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+
+        </div>
+    </div>
+
+
+    <!-- header -->
+
+    <nav class="container flex justify-around mx-auto py-8 font-semibold">
         <div>
-            <div>
-                <img src="logo.png" alt="">
+            <a href="#"><img src="logo.png" alt=""></a>
+        </div>
+        <div class="space-x-4 mr-3">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Blog</a>
+            <a href="#">FAQ</a>
+            <a href="#"><button
+                    class="px-3 py-1.5 rounded font-semibold bg-yellow hover:bg-gray-dark hover:text-body">Login</button></a>
+    </nav>
+    <!-- slider -->
 
+    <div>
+        <!-- Swiper -->
+        <div class="sliderAx h-auto ">
+            <div id="slider-1" class="">
+                <div class="bg-cover bg-center bg-blend-overlay  h-auto text-white py-24 sm:py-44 px-10 object-fill"
+                    style="background-image: url(https://images.unsplash.com/photo-1562564055-71e051d33c19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)">
+                    <div class="md:w-1/2 container mx-auto text-body shadow-gray-dark ">
+                        <p class="font-bold text-sm uppercase">Services</p>
+                        <p class="text-3xl font-bold">Hello world</p>
+                        <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+                        <a href="#"
+                            class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact
+                            us</a>
+                    </div>
+                </div> <!-- container -->
+                <br>
+            </div>
+
+            <div id="slider-2" class="">
+                <div class="bg-cover bg-top bg-blend-overlay h-auto text-white py-24 sm:py-44 px-10 object-fill"
+                    style="background-image: url(https://images.unsplash.com/photo-1544144433-d50aff500b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)">
+                    <div class="md:w-1/2 container mx-auto text-body ">
+                        <p class="font-bold text-sm uppercase">Services</p>
+                        <p class="text-3xl font-bold">Hello world</p>
+                        <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+                        <a href="#"
+                            class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact
+                            us</a>
+
+                    </div> <!-- container -->
+                </div>
+                <br>
             </div>
         </div>
-        <div class="          space-x-28 divide-x-2/4 text-gray">
-            <div class="">
-                <p class="text-blue font-bold ">CALL US</p>
-                <p class="text-grey">1800 425 4646</p>
-            </div>
-
-            <div>
-                <p class="text-blue font-bold"">EMAIL US</p>
-                <p>1800 425 4646</p>
-            </div>
-            <div>
-                <p class=" text-blue font-bold"">MARKET</p>
-                <p>1800</p>
-            </div>
-
+        <div class="flex justify-between w-12 mx-auto pb-2">
+            <button id="sButton1" onclick="sliderButton1()" class="bg-purple-400 rounded-full w-4 pb-2 "></button>
+            <button id="sButton2" onclick="sliderButton2() " class="bg-purple-400 rounded-full w-4 p-2"></button>
         </div>
-    </header>
+
+    </div>
+
+
+
+
+    <div class=" mx-auto justify-between px-10 flex py-8 bg-yellow w-2/3 -mt-24">
+        <h2 class="font-semibold text-body text-xl">WALMART AND AMAZON DROPSHIPINNG</h2>
+        <a href="#" class="bg-yellow "><button class="px-4 py-1.5 rounded font-semibold bg-gray-dark text-body">Conact
+                us</button></a>
+    </div>
+
+    <div class="flex w-2/3 space-x-4 container justify-around  mx-auto">
+
+
+        <div class="w-1/2">
+            <h2>AMAZON DROPSHIPPING</h2>
+            <p>We believe in being honest, transparent, goal oriented and customer centric which are some of the beliefs
+                that bring us together as entrepreneurs to bring you the best Amazon Dropshipping Automation.
+
+                Create a passive income lifestyle by investing in a Dropshipping Automation store created, optimized and
+                managed by walmart zone . We can help set up an Automated Amazon Store with a winning strategy that
+                guarantees your success. You’ll be able to make your money work hard for you and create a lifestyle
+                others dream of.
+
+                At walmart , we believe that success must be shared at all times and be a common goal therefore we will
+                not surrender until you enjoy the results that we promise to deliver on each and every store! When there
+                is a challenge, we bond even closer as every challenge enhances for the next time around.</p>
+        </div>
+        <div class="w-1/2">
+            <h2>WHAT'S A WALMART DROPSHIPPING BUSINESS?</h2>
+            <div class="w-full md:w-full mx-auto p-8">
+                <p>Open <strong>one</strong></p>
+                <div class="shadow-md">
+                    <div class="tab w-full overflow-hidden border-t">
+                        <input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-single-one">Label One</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
+                                architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo
+                                obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden border-t">
+                        <input class="absolute opacity-0" id="tab-single-two" type="radio" name="tabs2">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-single-two">Label Two</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
+                                architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo
+                                obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden border-t">
+                        <input class="absolute opacity-0" id="tab-single-three" type="radio" name="tabs2">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-single-three">Label
+                            Three</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
+                                architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo
+                                obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script>
+    var cont = 0;
+    function loopSlider() {
+        var xx = setInterval(function () {
+            switch (cont) {
+                case 0: {
+                    $("#slider-1").fadeOut(400);
+                    $("#slider-2").delay(400).fadeIn(400);
+                    $("#sButton1").removeClass("bg-purple-800");
+                    $("#sButton2").addClass("bg-purple-800");
+                    cont = 1;
+
+                    break;
+                }
+                case 1:
+                    {
+
+                        $("#slider-2").fadeOut(400);
+                        $("#slider-1").delay(400).fadeIn(400);
+                        $("#sButton2").removeClass("bg-purple-800");
+                        $("#sButton1").addClass("bg-purple-800");
+
+                        cont = 0;
+
+                        break;
+                    }
+
+
+            }
+        }, 5000);
+
+    }
+
+    function reinitLoop(time) {
+        clearInterval(xx);
+        setTimeout(loopSlider(), time);
+    }
+
+
+
+    function sliderButton1() {
+
+        $("#slider-2").fadeOut(400);
+        $("#slider-1").delay(400).fadeIn(400);
+        $("#sButton2").removeClass("bg-purple-800");
+        $("#sButton1").addClass("bg-purple-800");
+        reinitLoop(4000);
+        cont = 0
+
+    }
+
+    function sliderButton2() {
+        $("#slider-1").fadeOut(400);
+        $("#slider-2").delay(400).fadeIn(400);
+        $("#sButton1").removeClass("bg-purple-800");
+        $("#sButton2").addClass("bg-purple-800");
+        reinitLoop(4000);
+        cont = 1
+
+    }
+
+    $(window).ready(function () {
+        $("#slider-2").hide();
+        $("#sButton1").addClass("bg-purple-800");
+
+
+        loopSlider();
+
+
+
+
+
+
+    });
+
+
+</script>
 
 </html>
